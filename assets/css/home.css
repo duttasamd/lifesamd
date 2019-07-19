@@ -1,0 +1,50 @@
+﻿body, html {
+    padding: 0px;
+    margin: 0px;
+    height:180vh;
+}
+
+.navbar-dark {
+    background: transparent;
+    height:10%;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem !important;
+}
+
+.nav-link {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1rem !important;
+}
+
+.parallax {
+    background: url("../img/bg-nyc.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 100vh;
+    width:100vw;
+}
+
+.caption {
+    color: #fff;
+    font-size: 5vh;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    top: 40%;
+    text-align: right;
+}
+
+.tagline {
+    color: #fff;
+    font-size: 2vh;
+    font-style: italic;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.fas.fa-bars {
+    color: white;
+}
