@@ -32,3 +32,32 @@
     transition: all ease 1s;
     background: rgba(255, 255, 255, 1);
 }
+
+.footer {
+    bottom: 0px;
+    min-height: 40vh;
+    background-color: rgba(58,210,189, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.footercon {
+    height: 100%;
+    min-height: 100%;
+}
+
+.copyright {
+    background-color: rgba(58,210,189, 0.3);
+}
+
+.aico {
+    color: inherit;
+}
+
+.aico:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}

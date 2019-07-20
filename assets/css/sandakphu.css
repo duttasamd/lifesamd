@@ -20,5 +20,20 @@
 }
 
 .blogtext {
+    padding-left: 10%;
+    padding-right: 10%;
     margin-top: 10%;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2em;
+    /*letter-spacing: 1px;*/
+}
+
+@media (max-width: 1024px) {
+    .blogtext {
+        padding-left: 5%;
+        padding-right: 5%;
+        line-height: 1.7em;
+        text-align: justify;
+        /*letter-spacing: 0.05em;*/
+    }
 }

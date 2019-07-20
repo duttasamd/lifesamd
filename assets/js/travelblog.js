@@ -24,7 +24,7 @@ function parallax() {
         "translateY(" + -scrollPercent * 50 + "vh)"
     );
 
-    if (scrollPercent > 0.25) {
+    if (scrollPercent > 0.40) {
         if(!iscaptionblack) {
             $(".caption").css(
                 "color",
@@ -52,7 +52,7 @@ function parallax() {
         
     } 
     if(scrollPercent < 0.50) {
-        if(scrollPercent < 0.25 && iscaptionblack) {
+        if(scrollPercent < 0.40 && iscaptionblack) {
             $(".caption").css(
                 "color",
                 "white"
