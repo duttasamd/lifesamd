@@ -1,0 +1,62 @@
+.navbar {
+    background: white !important;
+    height:10%;
+    width: 100%;
+}
+
+.navbar-collapse {
+    background: rgba(255,255,255, 0.7) !important;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3vh !important;
+}
+
+.nav-link {
+    color: black !important;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2vh !important;
+}
+
+.collagecontainer {
+  position: relative;
+  margin-top: 10%;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
