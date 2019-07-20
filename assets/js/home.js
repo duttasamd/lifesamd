@@ -38,6 +38,7 @@ $(window).scroll(
                 "color",
                 "darkslategray"
             );
+            $("#nav").addClass("shrink");
         } else {
             $(".navbar-brand").css(
                 "color",
@@ -51,6 +52,7 @@ $(window).scroll(
                 "color",
                 "white"
             );
+            $("#nav").removeClass("shrink");
         }
     }
 );
