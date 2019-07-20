@@ -1,0 +1,71 @@
+html, body {
+	height: 100vh;
+	width: 100vw;
+}
+
+.navbar {
+    background: white !important;
+    height:10%;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3vh !important;
+}
+
+.nav-link {
+    color: black !important;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2vh !important;
+}
+
+.card-group {
+	position: absolute;
+	top: 10%;
+	height: 80%;
+	max-height: 80%;
+}
+
+.card {
+	max-height: 100%;
+}
+
+.card-img {
+	object-fit: cover !important;
+	max-height: 100% !important;
+}
+
+.card-img-overlay {
+	text-align: right !important;
+}
+
+.card-title {
+	color: white !important;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 8vh;
+    text-align: center;
+}
+
+/* Landscape phones and down */
+@media (max-width: 1024px) { 
+	.card-group {
+		position: absolute;
+		top: 10%;
+		height: 90%;
+		max-height: 90%;
+	}
+
+    .card {
+		max-height: 33.3%;
+		padding: 0px;
+		margin:0px !important;
+	}
+
+	.card-img {
+		object-fit: cover !important;
+		max-height: 100%;
+		padding: 0px;
+		margin: 0px;
+	}
+}
