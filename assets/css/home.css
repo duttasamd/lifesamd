@@ -123,6 +123,11 @@
         margin: 10%;
         text-align: center;
     }
+
+    .footer {
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
 }
 
 .footer {
@@ -143,6 +148,15 @@
 
 .copyright {
     background-color: rgba(58,210,189, 0.3);
+}
+
+.aico {
+    color: inherit;
+}
+
+.aico:hover {
+    transform: scale(1.2);
+    z-index: 1;
 }
 
 
