@@ -63,3 +63,15 @@
     transform: scale(1.2);
     z-index: 1;
 }
+
+@media (max-width: 768px) {
+    .collagecontainer {
+      position: relative;
+      margin-top: 20%;
+      margin-bottom: 10%;
+    }
+    .card:hover {
+        transform: scale(1.05);
+        z-index: 1;
+    }
+}

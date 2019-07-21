@@ -29,8 +29,8 @@
 }
 
 .blogtext {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
     margin-top: 5%;
     font-family: 'Montserrat', sans-serif;
     line-height: 2em;
@@ -47,6 +47,11 @@
 .routesvg:hover {
     transform: scale(1.2);
     z-index: 1;
+}
+
+.fullpic {
+    object-fit: cover;
+    margin-bottom: 3%;
 }
 
 @media (max-width: 1024px) {
@@ -66,5 +71,19 @@
 
     .info {
         margin-top: 10%;
+    }
+
+    .fullpic {
+        margin-bottom: 10%;
+        margin-bottom: 10%;
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 768px) {
+    .fullpic {
+        margin-bottom: 10%;
+        margin-bottom: 10%;
+        transform: scale(1.1);
     }
 }
