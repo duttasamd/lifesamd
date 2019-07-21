@@ -1,11 +1,12 @@
 .cover {
-    background: url("../img/sandakphu/sandk1.jpg") no-repeat center;
+    background: url("../img/sandakphu/sandk10.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 60vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-position: right 0% bottom 30%;
 }
 
 .caption {
@@ -19,13 +20,33 @@
     position: fixed;
 }
 
+.info {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
 .blogtext {
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 10%;
+    margin-top: 5%;
     font-family: 'Montserrat', sans-serif;
     line-height: 2em;
+    color: darkslategray;
     /*letter-spacing: 1px;*/
+}
+
+.route {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.routesvg:hover {
+    transform: scale(1.2);
+    z-index: 1;
 }
 
 @media (max-width: 1024px) {
@@ -34,6 +55,16 @@
         padding-right: 5%;
         line-height: 1.7em;
         text-align: justify;
+        margin-top: 10%;
         /*letter-spacing: 0.05em;*/
+    }
+
+    .cover {
+        background-position: right 50% bottom 80px !important;
+        height: 50vh;
+    }
+
+    .info {
+        margin-top: 10%;
     }
 }

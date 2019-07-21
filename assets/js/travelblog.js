@@ -24,7 +24,7 @@ function parallax() {
         "translateY(" + -scrollPercent * 50 + "vh)"
     );
 
-    if (scrollPercent > 0.40) {
+    if (scrollPercent > 0.30) {
         if(!iscaptionblack) {
             $(".caption").css(
                 "color",
@@ -33,7 +33,7 @@ function parallax() {
             iscaptionblack = true;
         }
 
-        if(scrollPercent > 0.50 && !isnavsolid) {
+        if(scrollPercent > 0.40 && !isnavsolid) {
             $(".navbar-brand").css(
                 "color",
                 "darkslategray"
@@ -51,8 +51,8 @@ function parallax() {
         }
         
     } 
-    if(scrollPercent < 0.50) {
-        if(scrollPercent < 0.40 && iscaptionblack) {
+    if(scrollPercent < 0.40) {
+        if(scrollPercent < 0.30 && iscaptionblack) {
             $(".caption").css(
                 "color",
                 "white"
