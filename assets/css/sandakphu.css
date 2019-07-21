@@ -96,6 +96,7 @@
   position: fixed;
   top: 10%;
   display: none;
+  z-index: -1;
 }
 
 /* The progress bar (scroll indicator) */
@@ -103,7 +104,6 @@
   height: 1px;
   background: darkslategray;
   width: 0%;
-  z-index: 10;
 }
 
 .centercontent {
