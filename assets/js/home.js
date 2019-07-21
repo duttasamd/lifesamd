@@ -21,6 +21,10 @@ function parallax() {
 
     var buoypos = document.getElementById("el").getBoundingClientRect();
     
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
 
     $(".caption").css(
         "transform", "translate(0px, " + wScroll / 3 + "%)"
@@ -46,6 +50,10 @@ function parallax() {
             "darkslategray"
         );
         $("#nav").addClass("shrink");
+        $(".progress-container").css(
+                "display",
+                "block"
+            );
     } else {
         $(".navbar-brand").css(
             "color",
@@ -60,6 +68,10 @@ function parallax() {
             "white"
         );
         $("#nav").removeClass("shrink");
+        $(".progress-container").css(
+            "display",
+            "none"
+        );
     }
 }
 
