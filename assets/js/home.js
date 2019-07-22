@@ -87,6 +87,10 @@ $("#sendmail").click(
 
             msg = senderemail + " : " + msg;
 
+            if(senderemail == "") {
+                senderemail = "lifesamd@gmail.com";
+            }
+
             if(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(senderemail)) {
                 console.log("Sending...");
                 Email.send({
