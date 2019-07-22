@@ -1,0 +1,37 @@
+.cover {
+    background: url("../img/nyc/nycc.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: right 0px bottom 130px;
+    overflow: hidden;
+}
+
+.caption {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    font-size: 7vw;
+    letter-spacing: 3vw;
+    position: fixed;
+}
+
+.content {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: darkslategray;
+}
+
+@media (max-width: 1024px) {
+    .cover {
+        background-position: right 50% bottom 120px !important;
+    }
+}
