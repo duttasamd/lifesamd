@@ -82,7 +82,7 @@ $("#sendmail").click(
     function() {
         var msg = $("#mailbody").val();
         
-        if(msg.length > 100) {
+        if(msg.length >= 100) {
             var senderemail = $("#senderemail").val();
 
             msg = senderemail + " : " + msg;
