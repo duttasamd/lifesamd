@@ -106,10 +106,9 @@
         <form class="emailform">
           <div class="form-group">
             <label for="senderemail">Your email:</label>
-            <input type="email" class="form-control" id="senderemail" aria-describedby="emailHelp" placeholder="optional">
+            <input type="text" class="form-control" id="senderemail" aria-describedby="emailHelp" placeholder="optional">
           </div>
-          <div class="form-group">
-            
+          <div class="form-group">            
             <textarea class="form-control" id="mailbody" id="exampleFormControlTextarea1" rows="10" minlength="10" placeholder="don't think, type .."></textarea>
             <small id="charcount" class="form-text text-muted text-right">0 of minimum 100 characters</small>
           </div>
@@ -121,6 +120,15 @@
         <div class="modal-content">
             <div class="modal-body">
                 Message Sent!
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal fade" id="wrongemail">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">
+                Enter a valid email or leave it blank
             </div>
         </div>
         </div>

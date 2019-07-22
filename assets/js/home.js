@@ -85,24 +85,27 @@ $("#sendmail").click(
         if(msg.length > 100) {
             var senderemail = $("#senderemail").val();
 
-            if(senderemail == "") {
-                senderemail = "lifesamd@gmail.com"
+            msg = senderemail + " : " + msg;
+
+            if(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(senderemail)) {
+                console.log("Sending...");
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "lifesamd@gmail.com",
+                    Password : "550d9b36-4a6a-410a-904b-a9f09d708b3d",
+                    To : 'dutta.sam.d@gmail.com',
+                    From : "lifesamd@gmail.com",
+                    Subject : "Message via website.",
+                    Body : msg
+                });
+                console.log("Sent.");
+
+                $('#myModal').modal('show');
+                $("#sendmail").attr("disabled", true);
+                $("#mailbody").val('');
+            } else {
+                $('#wrongemail').modal('show');
             }
-
-            console.log("Sending...");
-            Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "lifesamd@gmail.com",
-                Password : "550d9b36-4a6a-410a-904b-a9f09d708b3d",
-                To : 'dutta.sam.d@gmail.com',
-                From : senderemail,
-                Subject : "Message via website.",
-                Body : msg
-            });
-            console.log("Sent.");
-
-            $('#myModal').modal('show');
-            $("#mailbody").val('');
         }
 
         return false;  
