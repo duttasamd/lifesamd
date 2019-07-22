@@ -18,6 +18,8 @@
     <script defer src="assets/js/bootstrap.min.js"></script>
     <script defer src="assets/js/underscore.min.js"></script>
     <script defer src="assets/js/home.js"></script>
+    <script src="assets/js/smtp.js">
+</script>
 </head>
 <body>
     <nav class="navbar fixed-top navbar-dark navbar-expand-md" id="nav">
@@ -103,15 +105,25 @@
     <div class="container emailcon">
         <form class="emailform">
           <div class="form-group">
-            <label for="exampleInputEmail1">Your email:</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="optional">
+            <label for="senderemail">Your email:</label>
+            <input type="email" class="form-control" id="senderemail" aria-describedby="emailHelp" placeholder="optional">
           </div>
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Say what you will:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="don't think, type .."></textarea>
+            
+            <textarea class="form-control" id="mailbody" id="exampleFormControlTextarea1" rows="10" minlength="10" placeholder="don't think, type .."></textarea>
+            <small id="charcount" class="form-text text-muted text-right">0 of minimum 100 characters</small>
           </div>
-          <button type="submit" class="btn btn-primary emailsend">Submit</button>
+          <button class="btn btn-primary emailsend" id="sendmail" disabled="true">Send Mail</button>
         </form>
+    </div>
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">
+                Message Sent!
+            </div>
+        </div>
+        </div>
     </div>
     <div class="footer">
         <a href="https://www.facebook.com/dutta.sam.d" class="aico"><i class="fab fa-facebook-f fa-lg white-text fa-2x"> </i></a>

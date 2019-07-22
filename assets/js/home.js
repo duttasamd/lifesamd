@@ -4,6 +4,7 @@ $(document).ready(
             "color",
             "white"
         );
+        $("#sendmail").css("background-color", "gray");
     }
 );
 
@@ -76,3 +77,51 @@ function parallax() {
 }
 
 window.addEventListener('scroll', throttledparallax);
+
+$("#sendmail").click(
+    function() {
+        var msg = $("#mailbody").val();
+        
+        if(msg.length > 100) {
+            var senderemail = $("#senderemail").val();
+
+            if(senderemail == "") {
+                senderemail = "lifesamd@gmail.com"
+            }
+
+            console.log("Sending...");
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "lifesamd@gmail.com",
+                Password : "550d9b36-4a6a-410a-904b-a9f09d708b3d",
+                To : 'dutta.sam.d@gmail.com',
+                From : senderemail,
+                Subject : "Message via website.",
+                Body : msg
+            });
+            console.log("Sent.");
+
+            $('#myModal').modal('show');
+            $("#mailbody").val('');
+        }
+
+        return false;  
+    }
+);
+
+$("#mailbody").on('input',
+    function() {
+        var message = $(this).val();
+
+        if(message.length < 100) {
+            console.log(message.length + " is less than 100");
+            $("#charcount").show();
+            $("#sendmail").attr("disabled", true);
+            $("#sendmail").css("background-color", "gray");
+            $("#charcount").text(message.length + " of minimum 100 characters");
+        } else {
+            $("#charcount").hide();
+            $("#sendmail").attr("disabled", false);;
+        }
+    }
+); 
