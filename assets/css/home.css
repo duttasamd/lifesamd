@@ -27,7 +27,9 @@
 
 .parallax {
     /*background: url("../img/bg-nyc.jpg") no-repeat center;*/
-    background: url("http://giphygifs.s3.amazonaws.com/media/PFx5PEKR9ey64/giphy.gif") no-repeat center;
+    /*background: url("https://media.giphy.com/media/yqpZ6gI9I9y8M/giphy.gif") no-repeat center;*/
+    background: url("../img/cover.gif") no-repeat center;
+
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
