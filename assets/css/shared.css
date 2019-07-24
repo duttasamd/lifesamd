@@ -1,0 +1,110 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body, html {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar-dark {
+    background-color: transparent;
+    height:10%;
+}
+
+.navbar-light {
+    background-color: white;
+    height:10%;
+}
+
+.navbar-dark .navbar-brand {
+    color: white;
+}
+
+.navbar-dark .fas.fa-bars {
+    color: white;
+}
+
+.navbar-light .fas.fa-bars {
+    color: :black;
+}
+
+.navbar-light .navbar-collapse {
+    background: rgba(255,255,255, 0.7) !important;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navwhite {
+    transition: all ease 0.5s;
+    background: rgba(255, 255, 255, 1);
+}
+
+.navcollapsewhite {
+    background: rgba(255, 255, 255, 0.8);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.footer {
+    bottom: 0px;
+    min-height: 40vh;
+    background-color: rgba(58,210,189, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.footercon {
+    height: 100%;
+    min-height: 100%;
+}
+
+.copyright {
+    background-color: rgba(58,210,189, 0.3);
+}
+
+.aico {
+    color: inherit;
+}
+
+.aico:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.progress-container {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  position: fixed;
+  top: 10%;
+  display: none;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 1px;
+  background: darkslategray !important;
+  width: 0%;
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
+}

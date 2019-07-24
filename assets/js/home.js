@@ -28,11 +28,11 @@ function parallax() {
     document.getElementById("myBar").style.width = scrolled + "%";
 
     $(".caption").css(
-        "transform", "translate(0px, " + wScroll / 3 + "%)"
+        "transform", "translateY(" + wScroll / 3 + "%)"
     );
     $(".parallax").css(
         "transform",
-        "translate(0px, " + -wScroll / 20 + "%)"
+        "translateY(" + -wScroll / 20 + "%)"
     );
 
     var scrollpercent = (buoypos.top / winHeight) * 100;
@@ -50,7 +50,12 @@ function parallax() {
             "color",
             "darkslategray"
         );
-        $("#nav").addClass("shrink");
+        $("#nav").addClass("navwhite");
+
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            $('.navbar-collapse').addClass("navcollapsewhite");
+        }
+
         $(".progress-container").css(
                 "display",
                 "block"
@@ -68,7 +73,12 @@ function parallax() {
             "color",
             "white"
         );
-        $("#nav").removeClass("shrink");
+        $("#nav").removeClass("navwhite");
+
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            $('.navbar-collapse').removeClass("navcollapsewhite");
+        }
+
         $(".progress-container").css(
             "display",
             "none"

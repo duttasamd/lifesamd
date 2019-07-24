@@ -29,26 +29,14 @@ function parallax() {
 
     if (scrollPercent > 0.30) {
         if(!iscaptionblack) {
-            $(".caption").css(
-                "color",
-                "black"
-            );
+            $(".caption").addClass("blacken");
             iscaptionblack = true;
         }
 
         if(scrollPercent > 0.40 && !isnavsolid) {
-            $(".navbar-brand").css(
-                "color",
-                "darkslategray"
-            );
-            $(".nav-link").css(
-                "color",
-                "darkslategray"
-            );
-            $(".fas.fa-bars").css(
-                "color",
-                "darkslategray"
-            );
+            $(".navbar-brand").addClass("blacken");
+            $(".nav-link").addClass("blacken");
+            $(".fas.fa-bars").addClass("blacken");
             $("#nav").addClass("shrink");
             isnavsolid = true;
             $(".progress-container").css(
@@ -60,26 +48,14 @@ function parallax() {
     } 
     if(scrollPercent < 0.40) {
         if(scrollPercent < 0.30 && iscaptionblack) {
-            $(".caption").css(
-                "color",
-                "white"
-            );
+            $(".caption").removeClass("blacken");
             iscaptionblack = false;
         }
 
         if(isnavsolid) {
-            $(".navbar-brand").css(
-                "color",
-                "white"
-            );
-            $(".nav-link").css(
-                "color",
-                "white"
-            );
-            $(".fas.fa-bars").css(
-                "color",
-                "white"
-            );
+            $(".navbar-brand").removeClass("blacken");
+            $(".nav-link").removeClass("blacken");
+            $(".fas.fa-bars").removeClass("blacken");
             $("#nav").removeClass("shrink");
             isnavsolid = false;
             $(".progress-container").css(

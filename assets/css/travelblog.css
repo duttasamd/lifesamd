@@ -1,38 +1,3 @@
-/*html, body {
-    height: 200vh;
-}*/
-
-/*body {
-    min-height: 100vh;
-}*/
-
-.navbar {
-    height:10%;
-    margin: 0px;
-    width: 100vw !important;
-}
-
-.navbar-collapse {
-    background: transparent;
-    width: 100%;
-}
-
-.navbar-brand {
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 3vh !important;
-}
-
-.nav-link {
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 2vh !important;
-}
-
-.fas.fa-bars {
-    color: white;
-}
-
 .shrink {
     transition: all ease 1s;
     background: rgba(255, 255, 255, 1);
@@ -65,4 +30,9 @@
 .aico:hover {
     transform: scale(1.2);
     z-index: 1;
+}
+
+.blacken {
+    color: black !important;
+    transition: color 0.3s;
 }

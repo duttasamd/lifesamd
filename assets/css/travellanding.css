@@ -2,28 +2,6 @@
     min-height: 100vh;
 }
 
-.navbar {
-    background: white !important;
-    height:10%;
-    width: 100%;
-}
-
-.navbar-collapse {
-    background: rgba(255,255,255, 0.7) !important;
-    width: 100%;
-}
-
-.navbar-brand {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 3vh !important;
-}
-
-.nav-link {
-    color: black !important;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 2vh !important;
-}
-
 .collagecontainer {
   position: relative;
   margin-top: 10%;
@@ -36,35 +14,6 @@
 
 .card:hover {
     transform: scale(1.1);
-    z-index: 1;
-}
-
-.footer {
-    bottom: 0px;
-    min-height: 40vh;
-    background-color: rgba(58,210,189, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-.footercon {
-    height: 100%;
-    min-height: 100%;
-}
-
-.copyright {
-    background-color: rgba(58,210,189, 0.3);
-}
-
-.aico {
-    color: inherit;
-}
-
-.aico:hover {
-    transform: scale(1.2);
     z-index: 1;
 }
 
