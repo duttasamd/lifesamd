@@ -1,0 +1,22 @@
+{
+  "name": "lifesamd-api",
+  "version": "0.0.0",
+  "description": "apis for lifesamd frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duttasamd/lifesamd.git"
+  },
+  "author": "Samrat Dutta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duttasamd/lifesamd/issues"
+  },
+  "homepage": "https://github.com/duttasamd/lifesamd#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
