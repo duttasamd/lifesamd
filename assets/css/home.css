@@ -10,6 +10,7 @@
     overflow: hidden;
     height: 100vh;
     width:100vw;
+    /*transition: all 0.5s;*/
 }
 
 .caption {
@@ -33,6 +34,7 @@
 .con1 {
     height: 100%;
     margin-bottom: 20%;
+    /*margin-top: 20%;*/
 }
 
 .summ {

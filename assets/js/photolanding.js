@@ -1,4 +1,4 @@
-var totalimages = 49;
+var totalimages = 46;
 
 const pathtoimg = "../assets/img/instafit/"
 

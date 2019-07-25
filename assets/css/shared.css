@@ -5,6 +5,8 @@ html {
 body, html {
     padding: 0px;
     margin: 0px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .nav {

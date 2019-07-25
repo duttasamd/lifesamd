@@ -27,9 +27,9 @@ function parallax() {
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
 
-    $(".caption").css(
-        "transform", "translateY(" + wScroll / 3 + "%)"
-    );
+    // $(".caption").css(
+    //     "transform", "translateY(" + wScroll / 3 + "%)"
+    // );
     $(".parallax").css(
         "transform",
         "translateY(" + -wScroll / 20 + "%)"
