@@ -1,6 +1,10 @@
 var totalimages = 44;
 
-const pathtoimg = "../assets/img/instafit/";
+let pathtoimg = "../assets/img/instafit/";
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	pathtoimg = "../assets/img/instamobi/"
+}
 const pathtofullimg = "../assets/img/instagram/"
 
 
