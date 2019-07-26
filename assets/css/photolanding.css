@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   padding: 1%;
+  margin: 0px;
 }
 
 .albumcontainer {
@@ -68,7 +69,81 @@
     z-index: 1;
 }
 
-.postimg:hover {
+/*.postimg:hover {
     transform: scale(1.05);
     z-index: 1;
+}*/
+
+@media (max-width: 1024px) {
+    .imgrow {
+        margin-bottom: 1px;
+    }
+    .imgcol {
+        padding: 1px;
+    }
+
+    .albumcontainer {
+        margin-top: 20%;
+    }
 }
+
+.loading {
+  background: transparent url('http://thinkfuture.com/wp-content/uploads/2013/10/loading_spinner.gif') center no-repeat;
+  background-size: 20%;
+  object-fit: content;
+}
+
+.modal {
+  
+  z-index: 20; /* Sit on top */
+  /*padding-top: 100px;  // Location of the box */
+  /*padding-top: 20%;*/
+  display: none;
+  align-items: center;
+  justify-content: center;
+  max-height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(255,255,255); /* Fallback color */
+  background-color: rgba(255,255,255,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  width: auto;
+  height: auto;
+  top: 10%;
+  max-width: 700px;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.close {
+  /*position: absolute;
+  top: 15px;
+  right: 35px;*/
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+
