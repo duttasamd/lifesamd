@@ -69,10 +69,10 @@
     z-index: 1;
 }
 
-.postimg:hover {
+/*.postimg:hover {
     transform: scale(1.05);
     z-index: 1;
-}
+}*/
 
 @media (max-width: 1024px) {
     .imgrow {
@@ -86,3 +86,43 @@
         margin-top: 20%;
     }
 }
+
+.loading {
+  background: transparent url('http://thinkfuture.com/wp-content/uploads/2013/10/loading_spinner.gif') center no-repeat;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.modal-content {
+    max-height: 100%;
+    display: block;
+}
+
+#showcasepic {
+    object-fit: contain;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
