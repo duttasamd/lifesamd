@@ -1,0 +1,35 @@
+html, body {
+	min-height: 100vh;
+}
+
+.ide {
+	position: absolute;
+	width: 80%;
+	top: 10%;
+	height: 90%;
+	margin-left:10%;
+	margin-right:10%;
+	/*background-color: yellow;*/
+}
+
+#codeeditor {
+	height: 40%;
+}
+
+.output {
+	font-family: 'Source Code Pro', monospace;
+	height: 45%;
+	width: 100%;
+	padding: 5%;
+	background-color: lightgreen;
+}
+
+.error {
+	font-family: 'Source Code Pro', monospace;
+	color: crimson;
+	background-color: aqua;
+}
+
+.execute {
+	width:100%;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PyDE</title>
+	<link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../assets/css/shared.css" rel="stylesheet" />
+	<link href="../assets/css/pyde.css" rel="stylesheet" />	
+    <link rel="stylesheet" href="../assets/css/codemirror.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300&display=swap&subset=latin-ext" rel="stylesheet"> 
+
+	<script defer src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script defer src="../assets/js/bootstrap.min.js"></script>
+	<script src="../assets/js/codemirror.js"></script>
+	<script src="../assets/js/codemirror-mode/python/python.js"></script>
+    <script defer src="../assets/js/pyde.js"></script>
+</head>
+<body>
+	<nav class="navbar fixed-top navbar-light navbar-expand-md" id="nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">samrat dutta</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://duttasamd.github.io/cvsamrat/">Resumé</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="album/photolanding.html">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="learnpy/pyde.html">py</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<div class="ide">
+		<div class="editor">
+			<div id="codeeditor">
+				
+			</div>
+			<button class="btn btn-success execute">Interprete</button>
+		</div>
+		<div class="output">
+			<label id="outputlabel" class="outputlabel"></label>
+		</div>
+	</div>
+</body>
+</html>
