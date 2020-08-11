@@ -9,3 +9,11 @@ $("#cardgokarna").click(function() {
 $("#cardnyc").click(function() {
 	window.location.href = "nyc.html";
 });
+
+$("#cardopinions").click(function() {
+	window.location.href = "opinions.html";
+});
+
+$("#cardoop").click(function() {
+	window.location.href = "oopjava.html";
+});
