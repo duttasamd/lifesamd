@@ -4,7 +4,7 @@
 }
 
 .parallax {
-    background: url("../img/cover.gif") no-repeat center;
+    background: url("../img/bg2.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
@@ -85,7 +85,20 @@
     width: 100%;
 }
 
+@media (max-width: 700px) {
+    .parallax {
+        background: url("../img/bg1.jpg") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
+        height: 100vh;
+        width:100vw;
+        /*transition: all 0.5s;*/
+    }
+}
+
 @media (max-width: 1024px) {
+
     .highs {
         color: darkslategray;
         padding: 2%;
