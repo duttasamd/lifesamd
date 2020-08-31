@@ -5,6 +5,8 @@ var throttledparallax = _.throttle(() => {
 var isnavsolid = false;
 var iscaptionblack = false;
 
+$('.carousel').carousel();
+
 
 function parallax() {
 

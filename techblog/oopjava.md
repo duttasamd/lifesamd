@@ -1,5 +1,5 @@
 ## Object Oriented Programming tutorial using Java and a capstone project.
-
+<br />
 Here we learn the basics of Object Oriented Programming assuming previous experience in programming in C like languages. We use Java as the language of choice. The tutorial assumes familiarity with syntax though the first chapter gives an overview of the basic syntax in Java.
 
 ---
