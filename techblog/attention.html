@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-    <meta charset="utf-8" />
+	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>samrat dutta : blog : tech</title>
+    <title>samrat dutta : blog : tech : attention is all you need</title>
+
     <link href="../assets/css/shared.css" rel="stylesheet" />
-    <link href="../assets/css/landing.css" rel="stylesheet" />
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/css/all.min.css" rel="stylesheet" />
 
@@ -17,10 +16,17 @@
 
     <script defer src="../assets/js/jquery-3.4.1.min.js"></script>
     <script defer src="../assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../assets/js/landing.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js" integrity="sha512-L03kznCrNOfVxOUovR6ESfCz9Gfny7gihUX/huVbQB9zjODtYpxaVtIaAkpetoiyV2eqWbvxMH9fiSv5enX7bw==" crossorigin="anonymous" defer></script>
+    <script defer src="../assets/js/oopjava.js"></script>
+
+    <style>
+        iframe {
+            min-height: 100vh;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-light navbar-expand-md container">
+	<nav class="navbar fixed-top navbar-light navbar-expand-md container">
         <a class="navbar-brand" href="../index.html">samrat dutta</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
@@ -40,25 +46,8 @@
               </ul>
         </div>
     </nav>
-    <div class="container collagecontainer">
-        <div class="card-deck">
-          <div class="card" id="cardcsp">
-            <img class="card-img-top" src="../assets/img/tech/csp.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Review : Complex Security Policy?</h5>
-              <p class="card-text">A review on the paper Complex Security Policy? A longitudenal analysis</p>
-              <div class="d-flex"><small class="text-muted"> 10 minute read | Technical review | Web Security</small><small class="text-muted ml-auto mr-0">7. Jul 2020</small></div>
-            </div>
-          </div>
-          <div class="card" id="cardattn">
-            <img class="card-img-top" src="../assets/img/tech/transformer.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Review : Attention is all you need</h5>
-              <p class="card-text">A review of this landmark paper which introduced the transformer model.</p>
-              <div class="d-flex"><small class="text-muted">10 minute read | Technical review | NLP</small></p><small class="text-muted ml-auto mr-0">6. Feb 2021</small></div>
-            </div>
-          </div>
-        </div>
+    <div class="container pt-5 mt-5 h-100">
+        <iframe src="https://drive.google.com/file/d/1DLr0xo-uMUK_oN2jxxOUZdqpM6LCxReB/preview" width="100%" height="100%"></iframe>
     </div>
 </body>
 </html>

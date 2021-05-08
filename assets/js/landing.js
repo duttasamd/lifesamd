@@ -17,3 +17,11 @@ $("#cardopinions").click(function() {
 $("#cardoop").click(function() {
 	window.location.href = "oopjava.html";
 });
+
+$("#cardattn").click(function() {
+	window.location.href = "attention.html";
+});
+
+$("#cardcsp").click(function() {
+	window.location.href = "csp.html";
+});
